@@ -6,7 +6,7 @@
 /*   By: kammi <kammi@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 13:33:50 by kammi             #+#    #+#             */
-/*   Updated: 2024/12/23 16:44:21 by kammi            ###   ########.fr       */
+/*   Updated: 2025/01/14 11:31:24 by kammi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ int main(int argc, const char** argv)
 	{
 		merge.parsing(argv);
 		
-		// a verifer la prochaine fois pourquoi ca renvoie false alora que c'est trié
 		if (merge.isSorted())
 			{
 				std::cout << "the list is already sorted" << std::endl;
@@ -37,7 +36,7 @@ int main(int argc, const char** argv)
 		merge.sortList();
 		merge.sortDeque();
         std::cout << "After:\t";
-		//std::cout << "is sorted :" << (merge.isSorted()? "true" : "false") << std::endl;
+		// std::cout << "is sorted :" << (merge.isSorted()? "true" : "false") << std::endl;
         merge.display();
         merge.showTime();
 
@@ -45,7 +44,7 @@ int main(int argc, const char** argv)
 	catch(const std::exception& e)
 	{
 		std::cerr << e.what() << '\n';
-	}
+	} 
 	
 	return 0;
 }

@@ -6,7 +6,7 @@
 /*   By: kammi <kammi@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 13:07:25 by kammi             #+#    #+#             */
-/*   Updated: 2024/12/18 11:33:28 by kammi            ###   ########.fr       */
+/*   Updated: 2025/01/17 15:43:04 by kammi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,7 +101,7 @@ void	BitcoinExchange::isValidDate(const std::string &date)
 		if (day > 30)
 			throw std::invalid_argument("Invalid date");
 	}
-	//a raccourcir
+	
 	time_t now = time(0);
 	tm *ltm = localtime(&now);
 	if (year > 1900 + ltm->tm_year)

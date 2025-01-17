@@ -6,7 +6,7 @@
 /*   By: kammi <kammi@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 13:07:29 by kammi             #+#    #+#             */
-/*   Updated: 2024/12/18 11:31:06 by kammi            ###   ########.fr       */
+/*   Updated: 2025/01/17 15:37:25 by kammi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,10 +82,6 @@ class BitcoinExchange
 			public:
 				virtual const char* what() const throw();
 		};	
-
-
-		
-
 
 };
 
